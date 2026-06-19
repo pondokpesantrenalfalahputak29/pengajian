@@ -4,6 +4,72 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tasyakuran & Pengajian Akbar — Pondok Pesantren Al-Falah Putak</title>
+
+  <!-- ═══ SEO — GOOGLE INDEXING ═══ -->
+  <meta name="robots" content="index, follow">
+  <meta name="googlebot" content="index, follow">
+  <link rel="canonical" href="https://tasyakurandanpengajian.netlify.app/">
+  <meta name="author" content="Pondok Pesantren Al-Falah Putak">
+  <meta name="keywords" content="Tasyakuran, Pengajian Akbar, Pondok Pesantren Al-Falah Putak, KH Reza Ahmad Zahid, Gelumbang, Muara Enim, Sumatera Selatan, pesantren, pengajian, islam">
+
+  <!-- Schema.org JSON-LD (Data Terstruktur untuk Google) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Tasyakuran & Pengajian Akbar — Pondok Pesantren Al-Falah Putak",
+    "description": "Pondok Pesantren Al-Falah Putak menggelar Tasyakuran dan Pengajian Akbar bersama Dr. KH. Reza Ahmad Zahid. Terbuka untuk umum, gratis.",
+    "startDate": "2026-06-21T08:00:00+07:00",
+    "endDate": "2026-06-22T17:00:00+07:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Halaman Pondok Pesantren Al-Falah Putak",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Putak",
+        "addressLocality": "Gelumbang",
+        "addressRegion": "Muara Enim, Sumatera Selatan",
+        "addressCountry": "ID"
+      }
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "Pondok Pesantren Al-Falah Putak",
+      "url": "https://tasyakurandanpengajian.netlify.app/"
+    },
+    "performer": {
+      "@type": "Person",
+      "name": "Dr. KH. Reza Ahmad Zahid, Lc, M.A."
+    },
+    "image": "https://tasyakurandanpengajian.netlify.app/image.png",
+    "url": "https://tasyakurandanpengajian.netlify.app/",
+    "isAccessibleForFree": true,
+    "inLanguage": "id"
+  }
+  </script>
+
+  <!-- ═══ OPEN GRAPH META TAGS ═══ -->
+  <meta property="og:title" content="Tasyakuran & Pengajian Akbar — Pondok Pesantren Al-Falah Putak">
+  <meta property="og:description" content="Pondok Pesantren Al-Falah Putak mengundang seluruh masyarakat umum untuk hadir dalam Tasyakuran & Pengajian Akbar bersama Dr. KH. Reza Ahmad Zahid, 21-22 Juni 2026. Gratis & Terbuka untuk Umum.">
+  <meta property="og:image" content="https://tasyakurandanpengajian.netlify.app/image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="https://tasyakurandanpengajian.netlify.app/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="PP. Al-Falah Putak">
+  <meta property="og:locale" content="id_ID">
+
+  <!-- ═══ TWITTER CARD (opsional, untuk Twitter/X) ═══ -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Tasyakuran & Pengajian Akbar — Pondok Pesantren Al-Falah Putak">
+  <meta name="twitter:description" content="Pondok Pesantren Al-Falah Putak mengundang seluruh masyarakat umum untuk hadir dalam Tasyakuran & Pengajian Akbar bersama Dr. KH. Reza Ahmad Zahid, 21-22 Juni 2026.">
+  <meta name="twitter:image" content="https://tasyakurandanpengajian.netlify.app/image.png">
+
+  <!-- ═══ META DESKRIPSI UMUM ═══ -->
+  <meta name="description" content="Tasyakuran & Pengajian Akbar Pondok Pesantren Al-Falah Putak bersama Dr. KH. Reza Ahmad Zahid. 21-22 Juni 2026, Gelumbang, Muara Enim. Gratis & Terbuka untuk Umum.">
+
   <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Playfair+Display:wght@700;900&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -37,7 +103,7 @@
     .hero {
       position: relative;
       background: linear-gradient(160deg, #1a4a2e 0%, #0f2e1a 60%, #1a4a2e 100%);
-      min-height: 100svh;          /* svh: more reliable than vh on mobile */
+      min-height: 100svh;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -56,7 +122,6 @@
       pointer-events: none;
     }
 
-    /* geometric rings */
     .geo {
       position: absolute;
       border: 1.5px solid rgba(200,151,58,0.18);
@@ -71,7 +136,6 @@
       50%       { opacity: .8; transform: scale(1.04); }
     }
 
-    /* floating leaves */
     .leaf { position: absolute; width: 36px; opacity: .22; }
     .leaf-1 { top: 10%; left: 5%;  animation: floatA 7s ease-in-out infinite; }
     .leaf-2 { top: 14%; right: 7%; animation: floatA 9s ease-in-out infinite 1s; }
@@ -82,7 +146,6 @@
       50%       { transform: translateY(-14px); }
     }
 
-    /* hero content */
     .hero-inner { position: relative; z-index: 2; width: 100%; max-width: 680px; }
 
     .logo-area {
@@ -186,9 +249,6 @@
       50%      { transform: translateX(-50%) translateY(7px); }
     }
 
-    /* ══════════════════════════════
-       INTRO STRIP
-    ══════════════════════════════ */
     .intro-strip {
       background: var(--gold);
       padding: 20px 24px;
@@ -203,9 +263,6 @@
       line-height: 1.7;
     }
 
-    /* ══════════════════════════════
-       SECTIONS common
-    ══════════════════════════════ */
     section { padding: 64px 20px; }
     .section-inner { max-width: 1060px; margin: 0 auto; }
 
@@ -233,12 +290,7 @@
       color: var(--text-mid);
     }
 
-    /* ══════════════════════════════
-       ABOUT
-    ══════════════════════════════ */
-    .about-wrap {
-      background: var(--white);
-    }
+    .about-wrap { background: var(--white); }
     .about {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -256,7 +308,6 @@
       content: '';
       position: absolute;
       top: -5px; left: -5px; right: -5px; bottom: -5px;
-
     }
     .about-image-wrap img {
       width: 100%; display: block;
@@ -264,9 +315,6 @@
       box-shadow: 10px 10px 0 var(--gold);
     }
 
-    /* ══════════════════════════════
-       EVENTS
-    ══════════════════════════════ */
     .events-section {
       background: var(--cream-dark);
       text-align: center;
@@ -343,9 +391,6 @@
       margin-top: 4px; flex-shrink: 0;
     }
 
-    /* ══════════════════════════════
-       SPEAKER
-    ══════════════════════════════ */
     .speaker-section {
       background: linear-gradient(160deg, #1a4a2e 0%, #0d2518 100%);
       text-align: center;
@@ -415,9 +460,6 @@
       border-top: 1px solid rgba(255,255,255,.15);
     }
 
-    /* ══════════════════════════════
-       QUOTE
-    ══════════════════════════════ */
     .quote-section {
       background: var(--white);
       text-align: center;
@@ -447,9 +489,6 @@
       letter-spacing: .1em; text-transform: uppercase; color: var(--green-mid);
     }
 
-    /* ══════════════════════════════
-       ARTIKEL
-    ══════════════════════════════ */
     .article-section {
       background: var(--cream);
       max-width: 840px; margin: 0 auto;
@@ -464,9 +503,6 @@
       float: left; line-height: .8; margin: 8px 10px 0 0; color: var(--green-dark);
     }
 
-    /* ══════════════════════════════
-       LOKASI
-    ══════════════════════════════ */
     .location-section {
       background: var(--green-dark);
       text-align: center;
@@ -490,21 +526,21 @@
     }
 
     .map-container {
-  position: relative;
-  padding-bottom: 56.25%; /* Rasio 16:9 */
-  height: 0;
-  overflow: hidden;
-  max-width: 100%;
-}
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      max-width: 100%;
+    }
 
-.map-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
+    .map-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
     @media (max-width: 480px) {
       .location-card { flex-direction: column; text-align: center; padding: 18px 20px; }
     }
@@ -525,9 +561,6 @@
     .social-pill:hover { background: rgba(255,255,255,.2); }
     .social-pill svg { width: 15px; height: 15px; fill: currentColor; }
 
-    /* ══════════════════════════════
-       FOOTER
-    ══════════════════════════════ */
     footer {
       background: #0a1a0f; text-align: center;
       padding: 26px 20px;
@@ -535,44 +568,42 @@
     }
     footer strong { color: rgba(255,255,255,.5); }
 
-    /* Overlay Musik */
-#overlay {
-  position: fixed;
-  top: 0; left: 0; width: 100%; height: 100%;
-  background: rgba(10, 26, 15, 0.95);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  z-index: 99999;
-  text-align: center;
-  color: white;
-}
-#overlay button {
-  background: var(--gold);
-  border: none;
-  padding: 15px 40px;
-  font-family: 'Playfair Display', serif;
-  font-size: 1.2rem;
-  color: var(--green-dark);
-  cursor: pointer;
-  border-radius: 30px;
-  transition: transform 0.2s;
-}
-#overlay button:hover { transform: scale(1.05); }
+    #overlay {
+      position: fixed;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background: rgba(10, 26, 15, 0.95);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 99999;
+      text-align: center;
+      color: white;
+    }
+    #overlay button {
+      background: var(--gold);
+      border: none;
+      padding: 15px 40px;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.2rem;
+      color: var(--green-dark);
+      cursor: pointer;
+      border-radius: 30px;
+      transition: transform 0.2s;
+    }
+    #overlay button:hover { transform: scale(1.05); }
   </style>
 </head>
 <body>
 
-    <div id="overlay">
-  <h2 style="margin-bottom: 20px;">Selamat Datang</h2>
-  <button onclick="startSite()">Masuk ke Website</button>
-</div>
+  <div id="overlay">
+    <h2 style="margin-bottom: 20px;">Selamat Datang</h2>
+    <button onclick="startSite()">Masuk ke Website</button>
+  </div>
 
-<!-- Ganti "musik.mp3" dengan nama file musik Anda -->
-<audio id="myAudio" loop>
-  <source src="download.mp3" type="audio/mpeg">
-</audio>
+  <audio id="myAudio" loop>
+    <source src="download.mp3" type="audio/mpeg">
+  </audio>
 
   <!-- ═══ HERO ═══ -->
   <section class="hero">
@@ -655,82 +686,80 @@
       <h2 class="section-title">Rangkaian <span class="accent">Acara</span></h2>
 
       <div class="events-grid">
-  <!-- HARI PERTAMA -->
-  <div class="event-card">
-    <div class="event-card-header">
-      <p class="event-type">Hari Pertama</p>
-      <h3 class="event-name">Tasyakuran</h3>
-    </div>
-    
-    <!-- Sesi Pagi -->
-    <div class="event-card-body">
-      <div class="event-meta">
-        <div class="event-meta-row">
-          <div class="icon">📅</div>
-          <div><strong>Ahad Pagi, 21 Juni 2026</strong></div>
+        <!-- HARI PERTAMA -->
+        <div class="event-card">
+          <div class="event-card-header">
+            <p class="event-type">Hari Pertama</p>
+            <h3 class="event-name">Tasyakuran</h3>
+          </div>
+          
+          <div class="event-card-body">
+            <div class="event-meta">
+              <div class="event-meta-row">
+                <div class="icon">📅</div>
+                <div><strong>Ahad Pagi, 21 Juni 2026</strong></div>
+              </div>
+              <div class="event-meta-row">
+                <div class="icon">🕗</div>
+                <div>08.00 WIB - Selesai</div>
+              </div>
+            </div>
+            <ul class="event-list">
+              <li>Tasyakuran Mutakhorijin ke-6</li>
+              <li>Tasyakuran Al-Jurumiyah ke-1</li>
+              <li>Tasyakuran Al-Imrithi ke-2</li>
+              <li>Tasyakuran Alfiyah Ibnu Malik ke-3</li>
+            </ul>
+          </div>
+
+          <hr style="border: 0; border-top: 1px solid #eee; margin: 0 24px;">
+
+          <div class="event-card-body">
+            <div class="event-meta">
+              <div class="event-meta-row">
+                <div class="icon">📅</div>
+                <div><strong>Ahad Malam, 21 Juni 2026</strong></div>
+              </div>
+              <div class="event-meta-row">
+                <div class="icon">🕗</div>
+                <div>20.00 WIB - Selesai</div>
+              </div>
+            </div>
+            <ul class="event-list">
+              <li>Tasyakuran Khotmil Qur'an metode Qiraati ke-3</li>
+            </ul>
+          </div>
         </div>
-        <div class="event-meta-row">
-          <div class="icon">🕗</div>
-          <div>08.00 WIB - Selesai</div>
+
+        <!-- HARI KEDUA -->
+        <div class="event-card">
+          <div class="event-card-header" style="background:#8B4A0A;">
+            <p class="event-type">Hari Kedua · Puncak Acara</p>
+            <h3 class="event-name">Pengajian Akbar &amp; Khotmil Qur'an bil Ghoib 30 Juz</h3>
+          </div>
+          <div class="event-card-body">
+            <div class="event-meta">
+              <div class="event-meta-row">
+                <div class="icon">📅</div>
+                <div><strong>Senin Kliwon, 22 Juni 2026</strong></div>
+              </div>
+              <div class="event-meta-row">
+                <div class="icon">🕗</div>
+                <div>08.00 WIB – Sampai Selesai</div>
+              </div>
+              <div class="event-meta-row">
+                <div class="icon">📍</div>
+                <div>Halaman PP. Al-Falah Putak</div>
+              </div>
+            </div>
+            <ul class="event-list">
+              <li>Pengajian Akbar bersama Dr. KH. Reza Ahmad Zahid</li>
+              <li>Khotmil Qur'an bil Ghoib 30 Juz</li>
+              <li>Syiar Islam &amp; Penguatan Nilai Keagamaan</li>
+            </ul>
+          </div>
         </div>
       </div>
-      <ul class="event-list">
-        <li>Tasyakuran Mutakhorijin ke-6</li>
-        <li>Tasyakuran Al-Jurumiyah ke-1</li>
-        <li>Tasyakuran Al-Imrithi ke-2</li>
-        <li>Tasyakuran Alfiyah Ibnu Malik ke-3</li>
-      </ul>
-    </div>
-
-    <hr style="border: 0; border-top: 1px solid #eee; margin: 0 24px;">
-
-    <!-- Sesi Malam -->
-    <div class="event-card-body">
-      <div class="event-meta">
-        <div class="event-meta-row">
-          <div class="icon">📅</div>
-          <div><strong>Ahad Malam, 21 Juni 2026</strong></div>
-        </div>
-        <div class="event-meta-row">
-          <div class="icon">🕗</div>
-          <div>20.00 WIB - Selesai</div>
-        </div>
-      </div>
-      <ul class="event-list">
-        <li>Tasyakuran Khotmil Qur'an metode <br>Qiraati ke-3</li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- HARI KEDUA -->
-  <div class="event-card">
-    <div class="event-card-header" style="background:#8B4A0A;">
-      <p class="event-type">Hari Kedua · Puncak Acara</p>
-      <h3 class="event-name">Pengajian Akbar &amp; Khotmil Qur'an bil Ghoib 30 Juz</h3>
-    </div>
-    <div class="event-card-body">
-      <div class="event-meta">
-        <div class="event-meta-row">
-          <div class="icon">📅</div>
-          <div><strong>Senin Kliwon, 22 Juni 2026</strong></div>
-        </div>
-        <div class="event-meta-row">
-          <div class="icon">🕗</div>
-          <div>08.00 WIB – Sampai Selesai</div>
-        </div>
-        <div class="event-meta-row">
-          <div class="icon">📍</div>
-          <div>Halaman PP. Al-Falah Putak</div>
-        </div>
-      </div>
-      <ul class="event-list">
-        <li>Pengajian Akbar bersama Dr. KH. Reza Ahmad Zahid</li>
-        <li>Khotmil Qur'an bil Ghoib 30 Juz</li>
-        <li>Syiar Islam &amp; Penguatan Nilai Keagamaan</li>
-      </ul>
-    </div>
-  </div>
-</div>
     </div>
   </section>
 
@@ -762,7 +791,7 @@
       <p class="quote-text">
         Melalui kegiatan ini kami ingin mengajak masyarakat untuk bersama-sama bersyukur kepada Allah SWT atas berbagai nikmat dan capaian yang telah diraih para santri. Selain itu, pengajian akbar ini diharapkan menjadi media syiar Islam dan penguatan nilai-nilai keagamaan di tengah masyarakat.
       </p>
-      <p class="quote-author">Panitia Kegiatan</p>
+      <p class="quote-author">H. Jumali, S.Pd.I — Panitia Kegiatan</p>
     </div>
   </section>
 
@@ -794,13 +823,12 @@
         Sumatera Selatan
       </div>
 
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.621153634047!2d104.48328887497134!3d-3.1938453967813745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e3bba88270928d7%3A0x235ec07539e7cd14!2sPonpes%20Al%20Falah%20Putak!5e0!3m2!1sid!2sid!4v1780417995234!5m2!1sid!2sid" 
-          style="border:0;" 
-          allowfullscreen="" 
-          loading="lazy" 
-          referrerpolicy="no-referrer-when-downgrade">
-  </iframe>
-</div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.621153634047!2d104.48328887497134!3d-3.1938453967813745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e3bba88270928d7%3A0x235ec07539e7cd14!2sPonpes%20Al%20Falah%20Putak!5e0!3m2!1sid!2sid!4v1780417995234!5m2!1sid!2sid" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
     </div>
 
     <div class="social-row">
@@ -825,16 +853,12 @@
   </footer>
 
   <script>
-  function startSite() {
-    const overlay = document.getElementById('overlay');
-    const audio = document.getElementById('myAudio');
-    
-    // Sembunyikan overlay
-    overlay.style.display = 'none';
-    
-    // Putar audio
-    audio.play();
-  }
-</script>
+    function startSite() {
+      const overlay = document.getElementById('overlay');
+      const audio = document.getElementById('myAudio');
+      overlay.style.display = 'none';
+      audio.play();
+    }
+  </script>
 </body>
 </html>
